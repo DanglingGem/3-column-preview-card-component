@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+    --background-one: hsl(31, 77%, 52%);
+    --background-two: hsl(184, 100%, 22%);
+    --background-three: hsl(179, 100%, 13%);
+    --paragraphs-clr: hsla(0, 0%, 100%, 0.75);
+    --buttons-headings-bg:  hsl(0, 0%, 95%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #ffffff;
+}
+body{
+    color: var(--paragraphs-clr);
+
+}
+
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    margin-bottom: 2rem;
+    color: var(--buttons-headings-bg);
+    font-size: 30px;
+}
+
+
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    margin-bottom: 4rem;
+    line-height: 24px;
+}
+
+
+.btn{
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color: var(--buttons-headings-bg);
+    cursor: pointer;
+    transition: 300ms all linear;
+}
+
+.btn:hover{
+    color: var(--buttons-headings-bg);
+}
+
+.one{
+    color: var(--background-one);
+}
+
+.one:hover{
+    background-color: var(--background-one);
+}
+
+
+.two{
+    color: var(--background-two);
+} 
+
+.two:hover{
+    background-color: var(--background-two);
+}
+
+
+.three{
+    color: var(--background-three)
+}
+
+.three:hover{
+    background-color: var(--background-three);
+}
+
+
+@media only screen and (max-width: 1440px){
+.hero-container{
+    display: flex;
+    margin: auto;
+    height: 70vh;
+    width: 60%;
+    position: relative;
+    top: 6rem;
+    text-align: center;
+    border-radius: 5px;
+
+    
+
+}
+
+
+
+.container{
+    text-align: left;
+    padding: 2rem;
+}
+
+.image{
+    margin-bottom: 1rem;
+}
+
+.image img{
+    width: 25%;
+}
+
+#bg-one{
+    background-color: var(--background-one);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#bg-two{
+    background-color: var(--background-two);
+}
+
+#bg-three{
+    background-color: var(--background-three);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+    
+}
+
+
+@media only screen and (max-width: 375px){
+    .hero-container{
+        flex-direction: column;
+    }
+
+    #bg-one{
+    background-color: var(--background-one);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+    }
+
+
+#bg-three{
+    background-color: var(--background-three);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 0px;
+}
+}
